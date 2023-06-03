@@ -5,7 +5,7 @@ public class Start {
 	public static void main(String[] args) {
 		String Expression;
 		boolean active = true;
-		System.out.println("Enter expression here (type 'exit' to quit):");
+		System.out println("Enter expression here (type 'exit' to quit):");
 		Scanner scanIn;
 		
 		while (active) {
@@ -16,7 +16,7 @@ public class Start {
 				scanIn.close();
 				active = false;
 			} else {
-				System.out.println(Calculator.Run(Expression));
+				System.out println(Calculator.Run(Expression));
 			}
 
 		}

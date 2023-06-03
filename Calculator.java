@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Calculator {
+public class Calculate {
 
     static float finalResult;
 
@@ -15,7 +15,7 @@ public class Calculator {
         private Operations() {
         }
 
-        public static String ToString() {
+        public static String To String() {
             return "" + ADDITION_SYMBOL + MULTIPLICATION_SYMBOL + DIVISION_SYMBOL + SUBTRACTION_SYMBOL;
         }
 
@@ -34,7 +34,7 @@ public class Calculator {
             expression = 0 + expression;
         }
         // split expression by arithmetic operation to get all digits
-        String[] numbers = expression.split("[" + Operations.ToString() + "]");
+        String[] numbers = expression.split("[" + Operations.To String() + "]");
 
         // parse all operations
         List<String> operationList = new ArrayList<>();
@@ -180,7 +180,6 @@ public class Calculator {
             operations.remove(indexMinus);
 
             Calculate(numbers, operations);
-            return;
         }
 
     }
