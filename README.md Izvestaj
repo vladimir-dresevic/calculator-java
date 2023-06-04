@@ -1,0 +1,27 @@
+# calculator-java
+simple calculator written in Java; supports addition, subtraction, multiplication and division
+
+Assignment: Metrika,pregled I statička analiza
+Kurs: Software Quality Introduction
+Modul: Kontrola i osiguravanje kvaliteta
+
+Izračunate metrike:
+
+LOC: 234 linije koda – za kompletan projekat
+	(Calculator.java  -  187 linija koda
+ LICENSE  -  21 linija koda
+ Start.java  -  26 linija koda).
+
+Ciklomatska složenost za metodu evaluateExpression 12,
+		           za metodu Calculate 12.
+
+Kognitivna složenost   /
+
+Statička analiza:
+Uz pomoć alata SonarLint uočene su i ispravljene nedoslednosti:
+Folder: Calculator.java  -  4. linija koda Calculator ispravljeno u Calculate
+			  18. linija koda ToString ispravljeno u To String
+			  37. linija koda ToString ispravljeno u To String
+			  183. linija koda return; obrisana, jer na kraju koda ne postoji potreba za vraćanjem vrednosti.
+Folder: Start.java  -  8. linija koda System.out.println ispravljeno u System.out println
+		       37 linija koda System.out.println ispravljeno u System.out println
