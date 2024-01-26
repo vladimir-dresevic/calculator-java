@@ -1,0 +1,4 @@
+Pokretanjem debugging za oba fajla dobijamo sledeću poruku: Type mismatch: cannot convert from String to Str100ing
+        The method Run(String) in the type Calculator is not applicable for the arguments (Str100ing)
+
+Pa samim tim ne možemo pokrenuti fajlove dok se ne reši ovaj bag fajlova.
