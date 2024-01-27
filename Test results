@@ -2,3 +2,15 @@ Pokretanjem debugging za oba fajla dobijamo sledeću poruku: Type mismatch: cann
         The method Run(String) in the type Calculator is not applicable for the arguments (Str100ing)
 
 Pa samim tim ne možemo pokrenuti fajlove dok se ne reši ovaj bag fajlova.
+
+Unit test za sabiranje dva broja:
+
+class CalculatorTest {
+
+        @Test
+        void twoPlusTwoShouldEqualFour() {
+                var calculator = new CalculatorTest();
+                assertEquals(expected:4, calculator.add(numberA:2, numberB:2));
+  }
+
+}
