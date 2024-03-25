@@ -1,0 +1,15 @@
+Testiranje osnovnih aritmetičkih operacija:
+Ulaz: "5+4"
+Očekivani rezultat: "9"
+Testiranje različitih operacija:
+Ulaz: "2*3-3/3"
+Očekivani rezultat: "5"
+Testiranje operacija sa negativnim brojevima:
+Ulaz: "-7+5"
+Očekivani rezultat: "-2"
+Testiranje deljenja nulom:
+Ulaz: "8/0"
+Očekivani rezultat: "Infinity"
+Testiranje unosa nevažećeg izraza:
+Ulaz: "4+*5"
+Očekivani rezultat: "ERROR"
