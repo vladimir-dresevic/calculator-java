@@ -1,0 +1,60 @@
+Testiranje osnovnih aritmetičkih operacija:
+Ulaz: "5+4"
+Očekivani rezultat: "9"
+Testiranje različitih operacija:
+Ulaz: "2*3-3/3"
+Očekivani rezultat: "5" f
+Testiranje operacija sa negativnim brojevima:
+Ulaz: "-7+5"
+Očekivani rezultat: "-2"
+Testiranje deljenja nulom:
+Ulaz: "8/0"
+Očekivani rezultat: "Infinity"
+Testiranje unosa nevažećeg izraza:
+Ulaz: "4+*5"
+Očekivani rezultat: "ERROR"
+Svi ocekivani rezultati su tacni.
+Metod ‘ ToString() ’ u klasi ‘Operations’ trebalo bi ispisati ‘ toString’,
+Nedostatak Obrade Neispravnog Unosa: Program ne obrađuje neispravne ulazne izraze na odgovarajući način. Na primer, ako ulaz sadrži karaktere osim brojeva i aritmetičkih simbola, jednostavno vraća "ERROR" bez navođenja pravog razloga greške.
+
+Jedinicni test za klasu ‘Calculator’ ;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CalculatorTest {
+
+@test
+public void testRun_Addition() {
+assertEquals("5.0", Calculator.Run("2+3"));
+}
+
+@test
+public void testRun_Subtraction() {
+assertEquals("2.0", Calculator.Run("5-3"));
+}
+
+@test
+public void testRun_Multiplication() {
+assertEquals("6.0", Calculator.Run("2*3"));
+}
+
+@test
+public void testRun_Division() {
+assertEquals("2.0", Calculator.Run("6/3"));
+}
+
+@test
+public void testRun_ComplexExpression() {
+assertEquals("3.0", Calculator.Run("2+3*1-2/1"));
+}
+
+@test
+public void testRun_DivisionByZero() {
+assertEquals("ERROR", Calculator.Run("6/0"));
+}
+
+@test
+public void testRun_InvalidExpression() {
+assertEquals("ERROR", Calculator.Run("2&3"));
+}
+}
